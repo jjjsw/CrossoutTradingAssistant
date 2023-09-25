@@ -18,5 +18,5 @@ This website is wonderful as it gets real-time trading data of items and materia
 The most useful information (profit) is hidden in each item page, instead of on the table. There are tens or hundreds of items in each level, so manually clicking each item page to check profit is very tedious.
 
 ## Goal of this project:
-To automate navigating through each item page in CrossoutDB and extracting their profit, and having the option to export data into Excel for visual analysis
+To automate navigating through each item page in CrossoutDB and extracting their profit, and having the option to export data into CSV (Excel for now) for visual analysis. When I gather enough data, I can also put them in softwares like R for a more statistical analysis.
 
