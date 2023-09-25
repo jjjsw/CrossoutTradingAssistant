@@ -142,10 +142,11 @@ def crossout(action, chosenRarity):
                     'rarity': chosenRarity,
                     'profit': max(expandAllProfit, optimalRouteProfit),
                     'demand/supply': round(float(row.find_all('td')[17].text.strip('%'))/100, 2),
-                    'year': int(current.year),
-                    'month': int(current.month),
-                    'day': int(current.day),
-                    'hour': int(current.hour),
+                    'time': current.strftime('%Y-%m-%d %H'),
+                    'year': current.year,
+                    'month': current.month,
+                    'day': current.day,
+                    'hour': current.hour,
                 }
                 results.append(result)
         
@@ -156,9 +157,18 @@ def crossout(action, chosenRarity):
 
     if action == 'trade':
         print(sorted(results, key=lambda d:(d['profit'], d['demand/supply']), reverse=True))
+
     elif action == 'data':
-        import pandas as pd
-        pd.DataFrame(results).to_csv('crossoutTrading.csv', index=False)
+        '''import pandas as pd
+        pd.DataFrame(results).to_csv('crossoutTrading.csv', index=False)'''
+
+        fields = ['name','faction','category','type','rarity','profit','demand/supply','time','year','month','day','hour']
+        with open('crossoutTrading.csv', 'a') as file:
+            import csv
+            writer = csv.DictWriter(file, fieldnames=fields, lineterminator='\n')
+            if file.tell() == 0:    #only write header fields if file doesnt exist
+                writer.writeheader()
+            writer.writerows(results)
 
     driver.close()
 
@@ -177,6 +187,6 @@ try:
         print('Please enter "trade" or "data", followed by a valid rarity out of the following:\n',
             'common (white), rare (blue), special (green), epic (purple), legendary (yellow), relic (orange)\n')
 except ValueError:
-    print('invalid input, please enter text prompts\n')
+    print('Invalid input, please enter text prompts\n')
 finally:
-    print('done')
+    print('DONE')
