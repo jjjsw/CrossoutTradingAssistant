@@ -6,9 +6,7 @@ Written in Python, using libraries BeautifulSoup 4 + selenium
 ## Crossout
 > Crossout is a free-to-play vehicular combat video game focused on building and driving custom vehicles in PvP and PvE scenarios. --Wikipedia
 
-A lot of the items involved in building your car are tradable and craftable in the in-game market using the in-game currency "Coins".
-
-In the market, buyers always want to buy something for as little as possible, while sellers want to sell it for as much as possible. So each tradable item always has their lowest offer price being larger than their highest order price. It becomes profitable if its lowest offer price is higher than its crafting cost.
+A lot of the items involved in building your car are tradable and craftable in the in-game market using the in-game currency "Coins". It somewhat behaves like a real market so there are things like supply/demand, elasticity of demand, etc.
 
 Item prices are available at CrossoutDB, a player-made (not me!) website
 
