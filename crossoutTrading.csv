@@ -1,0 +1,103 @@
+name,faction,category,type,rarity,profit,demand/supply,time,year,month,day,hour
+Blastoff,Lunatics,Hardware,Booster,rare,0.15,0.34,2023-09-24 22,2023,9,24,22
+AC43 Rapier,Engineers,Weapons,Auto-cannon,rare,-1.84,0.67,2023-09-24 23,2023,9,24,22
+Ammo pack,Engineers,Hardware,Ammunition,rare,0.82,0.16,2023-09-24 24,2023,9,24,22
+R-2 Chill,Engineers,Hardware,Radiator,rare,0.24,0.47,2023-09-24 25,2023,9,24,22
+Sledgehammer,Lunatics,Weapons,Shotgun,rare,-0.78,0.5,2023-09-24 26,2023,9,24,22
+Wasp,Lunatics,Weapons,Unguided rocket,rare,1.01,0.61,2023-09-24 27,2023,9,24,22
+Trucker,Scavengers,Cabins,Heavy cabin,rare,-2.97,0.09,2023-09-24 28,2023,9,24,22
+Borer,Scavengers,Weapons,Melee weapon,rare,1.58,0.65,2023-09-24 29,2023,9,24,22
+Racing wheel,Nomads,Movement,Wheel,rare,1.83,0.22,2023-09-24 30,2023,9,24,22
+Balloon tyre ST,Engineers,Movement,Wheel,rare,1.56,0.18,2023-09-24 31,2023,9,24,22
+Judge 76mm,Scavengers,Weapons,Cannon,rare,1.38,0.17,2023-09-24 32,2023,9,24,22
+Landing gear ST,Nomads,Movement,Wheel,rare,2.37,0.28,2023-09-24 33,2023,9,24,22
+Spitfire,Engineers,Weapons,Shotgun,rare,-1.15,0.75,2023-09-24 34,2023,9,24,22
+Racing wheel ST,Nomads,Movement,Wheel,rare,2.41,0.88,2023-09-24 35,2023,9,24,22
+Studded wheel,Lunatics,Movement,Wheel,rare,2.19,0.29,2023-09-24 36,2023,9,24,22
+Landing gear,Nomads,Movement,Wheel,rare,1.65,0.5,2023-09-24 37,2023,9,24,22
+Fuel tank,Engineers,Hardware,Special module,rare,-7.78,0.96,2023-09-24 38,2023,9,24,22
+CS Taymyr,Engineers,Hardware,Cooler,rare,-1.11,0.67,2023-09-24 39,2023,9,24,22
+Wyvern,Nomads,Cabins,Medium cabin,rare,-4.45,0.63,2023-09-24 40,2023,9,24,22
+Chained wheel,Lunatics,Movement,Wheel,rare,1.63,0.24,2023-09-24 41,2023,9,24,22
+Large wheel,Scavengers,Movement,Wheel,rare,0.59,0.18,2023-09-24 42,2023,9,24,22
+Big G,Lunatics,Hardware,Generator,rare,1.26,0.77,2023-09-24 43,2023,9,24,22
+Chained wheel ST,Lunatics,Movement,Wheel,rare,1.63,0.61,2023-09-24 44,2023,9,24,22
+Large wheel ST,Scavengers,Movement,Wheel,rare,-2.58,1.14,2023-09-24 45,2023,9,24,22
+Balloon tyre,Engineers,Movement,Wheel,rare,2.12,0.21,2023-09-24 46,2023,9,24,22
+RD-1 Listener,Scavengers,Hardware,Radar,rare,-0.24,0.22,2023-09-24 47,2023,9,24,22
+Vector,Nomads,Weapons,Machine gun,rare,1.88,1.35,2023-09-24 48,2023,9,24,22
+Little Boy 6LB,Engineers,Weapons,Turret cannon,rare,-3.4,0.8,2023-09-24 49,2023,9,24,22
+ST-M23 Defender,Nomads,Weapons,Frontal machine gun,rare,0.04,0.87,2023-09-24 50,2023,9,24,22
+Studded wheel ST,Lunatics,Movement,Wheel,rare,-0.36,0.44,2023-09-24 51,2023,9,24,22
+Growl,Lunatics,Cabins,Light cabin,rare,0.04,1.47,2023-09-24 52,2023,9,24,22
+AD-12 Falcon,Nomads,Weapons,Drone,rare,2.08,0.52,2023-09-24 53,2023,9,24,22
+DT Cobra,Scavengers,Weapons,Turret,rare,1.07,1.42,2023-09-24 54,2023,9,24,22
+TS-1 Horizon,Engineers,Hardware,Visor,rare,2.23,0.24,2023-09-24 55,2023,9,24,22
+APC wheel ST,Steppenwolfs,Movement,Heavy wheel,special,6.34,0.24,2023-09-25 10,2023,9,25,10
+M-37 Piercer,Engineers,Weapons,Rapid-fire machine gun,special,22.46,0.61,2023-09-25 10,2023,9,25,10
+Chameleon,Nomads,Hardware,Stealth,special,-23.86,0.55,2023-09-25 10,2023,9,25,10
+Sidekick,Steppenwolfs,Weapons,Wheel drone,special,2.39,0.12,2023-09-25 10,2023,9,25,10
+Synthesis,Dawn's Children,Weapons,Plasma Emitter,special,-2.54,0.55,2023-09-25 10,2023,9,25,10
+Shiv ST,Firestarters,Movement,Medium wheel,special,7.89,0.73,2023-09-25 10,2023,9,25,10
+Boom,Lunatics,Weapons,Explosives,special,-0.89,0.45,2023-09-25 10,2023,9,25,10
+Prosecutor 76mm,Scavengers,Weapons,Cannon,special,-9.38,0.16,2023-09-25 10,2023,9,25,10
+ZS-33 Hulk,Scavengers,Weapons,Turret cannon,special,-6.78,0.59,2023-09-25 10,2023,9,25,10
+Jawbreaker,Steppenwolfs,Cabins,Heavy cabin,special,-6.5,0.44,2023-09-25 10,2023,9,25,10
+Genesis,Dawn's Children,Hardware,Microfactory,special,6.45,0.5,2023-09-25 10,2023,9,25,10
+Goblin,Lunatics,Weapons,Shotgun,special,-1.91,0.48,2023-09-25 10,2023,9,25,10
+AC50 Storm,Nomads,Weapons,Auto-cannon,special,2.98,1.02,2023-09-25 10,2023,9,25,10
+Hardcore,Lunatics,Hardware,Engine,special,-6.99,0.68,2023-09-25 10,2023,9,25,10
+Dun horse,Nomads,Hardware,Engine,special,-6.61,0.42,2023-09-25 10,2023,9,25,10
+Lunar IV,Dawn's Children,Movement,Light wheel,special,8.54,0.08,2023-09-25 10,2023,9,25,10
+Ampere,Nomads,Hardware,Generator,special,-2.99,0.41,2023-09-25 10,2023,9,25,10
+Lunar IV ST,Dawn's Children,Movement,Light wheel,special,8.27,0.56,2023-09-25 10,2023,9,25,10
+Oculus VI,Scavengers,Hardware,Radar,special,0.02,0.35,2023-09-25 10,2023,9,25,10
+Mace,Lunatics,Weapons,Shotgun,special,3.3,2,2023-09-25 10,2023,9,25,10
+Maxwell,Nomads,Hardware,Radar,special,1.57,0.44,2023-09-25 10,2023,9,25,10
+Pilgrim,Dawn's Children,Cabins,Medium cabin,special,-6.42,0.56,2023-09-25 10,2023,9,25,10
+DT Python,Scavengers,Weapons,Turret,special,0.65,0.16,2023-09-25 10,2023,9,25,10
+Twin wheel,Scavengers,Movement,Heavy wheel,special,-16.91,0.36,2023-09-25 10,2023,9,25,10
+AD-13 Hawk,Nomads,Weapons,Drone,special,5.1,0.29,2023-09-25 10,2023,9,25,10
+APC wheel,Steppenwolfs,Movement,Heavy wheel,special,4.96,1.67,2023-09-25 10,2023,9,25,10
+Sinus-0,Nomads,Weapons,Machine gun,special,2.72,1.04,2023-09-25 10,2023,9,25,10
+Twin wheel ST,Scavengers,Movement,Heavy wheel,special,6.5,2.91,2023-09-25 10,2023,9,25,10
+Buzzsaw,Lunatics,Weapons,Melee weapon,special,1.24,1.43,2023-09-25 10,2023,9,25,10
+Bat,Firestarters,Cabins,Light cabin,special,4.57,0.95,2023-09-25 10,2023,9,25,10
+Shiv,Firestarters,Movement,Medium wheel,special,7.12,0.94,2023-09-25 10,2023,9,25,10
+Razorback,Scavengers,Hardware,Engine,special,-5.21,1.73,2023-09-25 10,2023,9,25,10
+PU-1 Charge,Scavengers,Hardware,Generator,special,9.68,4.36,2023-09-25 10,2023,9,25,10
+Junkbow,Firestarters,Weapons,Shotgun,special,2.32,1.25,2023-09-25 10,2023,9,25,10
+AC43 Rapier,Engineers,Weapons,Auto-cannon,rare,-5.14,0.56,2023-09-25 10,2023,9,25,10
+Blastoff,Lunatics,Hardware,Booster,rare,-1.32,0.44,2023-09-25 10,2023,9,25,10
+Wasp,Lunatics,Weapons,Unguided rocket,rare,0.51,0.54,2023-09-25 10,2023,9,25,10
+Ammo pack,Engineers,Hardware,Ammunition,rare,-2.75,0.31,2023-09-25 10,2023,9,25,10
+Judge 76mm,Scavengers,Weapons,Cannon,rare,-1.46,0.43,2023-09-25 10,2023,9,25,10
+Trucker,Scavengers,Cabins,Heavy cabin,rare,-2.22,0.68,2023-09-25 10,2023,9,25,10
+Sledgehammer,Lunatics,Weapons,Shotgun,rare,1.31,0.72,2023-09-25 10,2023,9,25,10
+Large wheel ST,Scavengers,Movement,Wheel,rare,1.84,0.61,2023-09-25 10,2023,9,25,10
+Wyvern,Nomads,Cabins,Medium cabin,rare,-4.91,0.3,2023-09-25 10,2023,9,25,10
+Spitfire,Engineers,Weapons,Shotgun,rare,-1.06,0.5,2023-09-25 10,2023,9,25,10
+Borer,Scavengers,Weapons,Melee weapon,rare,-3.47,0.94,2023-09-25 10,2023,9,25,10
+R-2 Chill,Engineers,Hardware,Radiator,rare,2.2,1.16,2023-09-25 10,2023,9,25,10
+Big G,Lunatics,Hardware,Generator,rare,-1.89,0.5,2023-09-25 10,2023,9,25,10
+Landing gear ST,Nomads,Movement,Wheel,rare,2.45,0.51,2023-09-25 10,2023,9,25,10
+Little Boy 6LB,Engineers,Weapons,Turret cannon,rare,-3.7,0.53,2023-09-25 10,2023,9,25,10
+Balloon tyre ST,Engineers,Movement,Wheel,rare,2.62,0.7,2023-09-25 10,2023,9,25,10
+Studded wheel,Lunatics,Movement,Wheel,rare,2.36,0.54,2023-09-25 10,2023,9,25,10
+Vector,Nomads,Weapons,Machine gun,rare,0.28,0.7,2023-09-25 10,2023,9,25,10
+Large wheel,Scavengers,Movement,Wheel,rare,0.61,0.19,2023-09-25 10,2023,9,25,10
+Growl,Lunatics,Cabins,Light cabin,rare,-1.41,1.2,2023-09-25 10,2023,9,25,10
+ST-M23 Defender,Nomads,Weapons,Frontal machine gun,rare,1.95,0.74,2023-09-25 10,2023,9,25,10
+RD-1 Listener,Scavengers,Hardware,Radar,rare,-0.09,0.28,2023-09-25 10,2023,9,25,10
+Chained wheel ST,Lunatics,Movement,Wheel,rare,-1.31,0.92,2023-09-25 10,2023,9,25,10
+Racing wheel,Nomads,Movement,Wheel,rare,3.35,1.05,2023-09-25 10,2023,9,25,10
+Fuel tank,Engineers,Hardware,Special module,rare,-1.02,1.22,2023-09-25 10,2023,9,25,10
+Chained wheel,Lunatics,Movement,Wheel,rare,1.66,0.22,2023-09-25 10,2023,9,25,10
+Landing gear,Nomads,Movement,Wheel,rare,2.54,1.14,2023-09-25 10,2023,9,25,10
+TS-1 Horizon,Engineers,Hardware,Visor,rare,1.66,0.67,2023-09-25 10,2023,9,25,10
+CS Taymyr,Engineers,Hardware,Cooler,rare,0.66,1.38,2023-09-25 10,2023,9,25,10
+Balloon tyre,Engineers,Movement,Wheel,rare,2.09,0.81,2023-09-25 10,2023,9,25,10
+AD-12 Falcon,Nomads,Weapons,Drone,rare,2.84,1.08,2023-09-25 10,2023,9,25,10
+DT Cobra,Scavengers,Weapons,Turret,rare,1.62,1.19,2023-09-25 10,2023,9,25,10
+Studded wheel ST,Lunatics,Movement,Wheel,rare,1.54,1.4,2023-09-25 10,2023,9,25,10
+Racing wheel ST,Nomads,Movement,Wheel,rare,7.48,3.2,2023-09-25 10,2023,9,25,10
