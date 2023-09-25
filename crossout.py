@@ -163,7 +163,7 @@ def crossout(action, chosenRarity):
         pd.DataFrame(results).to_csv('crossoutTrading.csv', index=False)'''
 
         fields = ['name','faction','category','type','rarity','profit','demand/supply','time','year','month','day','hour']
-        with open('crossoutTrading.csv', 'a') as file:
+        with open('crossoutItemData.csv', 'a') as file:
             import csv
             writer = csv.DictWriter(file, fieldnames=fields, lineterminator='\n')
             if file.tell() == 0:    #only write header fields if file doesnt exist
