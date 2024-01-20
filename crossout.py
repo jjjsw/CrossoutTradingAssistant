@@ -18,7 +18,8 @@ def crossout(action, chosenRarity):
     driver.get(url)
 
     #click rarity dropdown button:
-    driver.find_element(By.XPATH,"//button[@id='rarityDropdown']").click()
+    driver.execute_script("arguments[0].click();", 
+    WebDriverWait(driver, 25).until(EC.element_to_be_clickable((By.XPATH, "//button[@id='rarityDropdown']"))))
 
     action = str(action.strip().lower())
     chosenRarity = str(chosenRarity.strip().lower())
@@ -67,7 +68,7 @@ def crossout(action, chosenRarity):
 
     #loop all pages
     for i in range(0, numOfTables):
-
+        
         #extract data from table in CURRENT page:
         table = driver.find_element(By.XPATH,"//tbody")
         tableInnerHTML = table.get_attribute('innerHTML')
@@ -124,14 +125,30 @@ def crossout(action, chosenRarity):
                     'name': itemName,
                     'profit': profit,
                     'method': method,
-                    'demand/supply': round(float(row.find_all('td')[17].text.strip('%'))/100, 2),
+                    'demand_supply': round(float(row.find_all('td')[17].text.strip('%'))/100, 2),
                 }
                 results.append(result)
             
-            elif action == 'data':
+            elif action == 'data':  #if collecting data, grab a few more data pieces
+
                 faction = driver.find_elements(By.XPATH,"//span[@class='badge badge-secondary my-1 mr-2 item-tag']")[0].text.strip()
                 category = driver.find_elements(By.XPATH,"//span[@class='badge badge-secondary my-1 mr-2 item-tag']")[1].text
                 type = driver.find_elements(By.XPATH,"//span[@class='badge badge-secondary my-1 mr-2 item-tag']")[2].text
+
+                #locate the table containing prices
+                priceTable = driver.find_element(By.XPATH,"//table[@class='table table-borderless table-sm m-2']")
+                sellPrice = priceTable.find_element(By.XPATH,".//tr[1]/td[2]").text.strip()
+                buyPrice = priceTable.find_element(By.XPATH,".//tr[2]/td[2]").text.strip()
+
+                #find table of performance stat
+                statsTable = driver.find_elements(By.XPATH,"//table[@class='table table-borderless table-sm']")[1]
+                powerScore = statsTable.find_element(By.XPATH,"//h4[@class='mr-2']").text.strip()
+
+                durability_element = statsTable.find_element(By.XPATH,"//b[text()='Durability']/../following-sibling::td")
+                mass_element = statsTable.find_element(By.XPATH,"//b[text()='Mass']/../following-sibling::td")
+                durability = int(''.join(filter(str.isdigit, durability_element.text)))
+                mass = int(''.join(filter(str.isdigit, mass_element.text)))
+
                 driver.back()
                 time.sleep(0.2)
                 result = {
@@ -141,7 +158,12 @@ def crossout(action, chosenRarity):
                     'type': type,
                     'rarity': chosenRarity,
                     'profit': max(expandAllProfit, optimalRouteProfit),
-                    'demand/supply': round(float(row.find_all('td')[17].text.strip('%'))/100, 2),
+                    'sellPrice': sellPrice,
+                    'buyPrice': buyPrice,
+                    'demand_supply': round(float(row.find_all('td')[17].text.strip('%'))/100, 2),
+                    'powerScore': powerScore,
+                    'durability': durability,
+                    'mass': mass,
                     'time': current.strftime('%Y-%m-%d %H'),
                     'year': current.year,
                     'month': current.month,
@@ -150,36 +172,35 @@ def crossout(action, chosenRarity):
                 }
                 results.append(result)
         
+        #CHANGE TO: get rid of loop. click "next" until unclickable (class name = "blabla unclickable")
         #go next page unless on end page
         if i+1 < numOfTables:
             driver.execute_script("arguments[0].click();", 
             WebDriverWait(driver, 25).until(EC.element_to_be_clickable((By.XPATH, "//li[@class='paginate_button page-item next']"))))
 
+    driver.close()
+
     if action == 'trade':
-        print(sorted(results, key=lambda d:(d['profit'], d['demand/supply']), reverse=True))
+        print(sorted(results, key=lambda d:(d['profit'], d['demand_supply']), reverse=True))
 
     elif action == 'data':
-        '''import pandas as pd
-        pd.DataFrame(results).to_csv('crossoutTrading.csv', index=False)'''
-
-        fields = ['name','faction','category','type','rarity','profit','demand/supply','time','year','month','day','hour']
-        with open('crossoutItemData.csv', 'a') as file:
+        fields = ['name','faction','category','type','rarity','profit','sellPrice','buyPrice','demand_supply',
+                  'powerScore','durability','mass','time','year','month','day','hour']
+        with open('C:\\=====生活\\python 3.11\\crossoutItemData.csv', 'a') as file:
             import csv
             writer = csv.DictWriter(file, fieldnames=fields, lineterminator='\n')
             if file.tell() == 0:    #only write header fields if file doesnt exist
                 writer.writeheader()
             writer.writerows(results)
-
-    driver.close()
-
-
-validRarity = ['common','white','rare','blue','special','green','epic','purple','legendary','yellow','relic','orange']
+    
 
 try:
     action, chosenRarity = input('\nTo see what to trade, enter "trade [rarity]", e.g. trade special/trade green\n'+
                                  'To record trading data, enter "data [rarity]", e.g. data rare/data blue\n').split()
     action = str(action.strip().lower())
     chosenRarity = str(chosenRarity.strip().lower())
+
+    validRarity = ['common','white','rare','blue','special','green','epic','purple','legendary','yellow','relic','orange']
 
     if (action == 'trade' or action == 'data') and chosenRarity in validRarity:
         crossout(action, chosenRarity)
